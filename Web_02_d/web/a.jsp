@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Jan 8, 2026, 4:54:32 PM
+    Document   : a
+    Created on : Jan 8, 2026, 5:06:55 PM
     Author     : ASUS
 --%>
 
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <a href="login.jsp">Login</a>
+        <h1>Hello World!</h1>
     </body>
 </html>
