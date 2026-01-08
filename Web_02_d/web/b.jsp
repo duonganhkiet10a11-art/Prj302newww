@@ -1,6 +1,6 @@
 <%-- 
-    Document   : a
-    Created on : Jan 8, 2026, 5:06:55 PM
+    Document   : b
+    Created on : Jan 8, 2026, 5:09:16 PM
     Author     : ASUS
 --%>
 
@@ -12,9 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>banh dieu khien </h1>
-        tinh nang 1></br>
-        tinh nang 2></br>
-        tinh nang 3></br>
+        <h1>Dang nhap that bai! Sai username hoac password.</h1>
     </body>
 </html>
