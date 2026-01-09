@@ -41,7 +41,7 @@ public class MainController extends HttpServlet {
             String txtUsername = request.getParameter("txtUsername");
             String txtPassword = request.getParameter("txtPassword");
             String url = "";
-            if (txtUsername.equalsIgnoreCase("siu") && txtPassword.equalsIgnoreCase("1234")) {
+            if (txtUsername.equalsIgnoreCase("admin") && txtPassword.equalsIgnoreCase("admin")) {
                 url = "a.jsp";
 
             } else {
