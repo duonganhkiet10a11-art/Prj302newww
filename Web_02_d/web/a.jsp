@@ -14,7 +14,9 @@
     <body>
         <h1>bang dieu khien </h1>
         tinh nang 1></br>
+        
         tinh nang 2></br>
+        
         tinh nang 3></br>
     </body>
 </html>
