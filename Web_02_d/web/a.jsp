@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>banh dieu khien </h1>
+        <h1>bang dieu khien </h1>
         tinh nang 1></br>
         tinh nang 2></br>
         tinh nang 3></br>
