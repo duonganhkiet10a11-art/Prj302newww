@@ -12,7 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <<form action="MainController" method="post">
+        <form action="MainController" method="post">
+           <strong>Please Login Your Account!!!</strong><br>
 
             Username: <input type="text" name="txtUsername" /> <br/>
             Password: <input type="password" name="txtPassword" /> <br/>
