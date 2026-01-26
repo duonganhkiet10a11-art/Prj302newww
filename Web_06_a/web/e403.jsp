@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Jan 22, 2026, 3:24:37 PM
+    Document   : 403
+    Created on : Jan 22, 2026, 3:44:14 PM
     Author     : ASUS
 --%>
 
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <a href="login.jsp">Login</a>
+          <h1>403 - Access Denied! </h1>
     </body>
 </html>
