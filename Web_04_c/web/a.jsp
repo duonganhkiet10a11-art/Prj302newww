@@ -1,8 +1,4 @@
-<%-- 
-    Document   : a.jsp
-    Created on : 08-01-2026, 16:51:55
-    Author     : tungi
---%>
+
 
 <%@page import="models.UserDTO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

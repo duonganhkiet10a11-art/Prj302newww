@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index
-    Created on : Jan 22, 2026, 3:24:37 PM
-    Author     : ASUS
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

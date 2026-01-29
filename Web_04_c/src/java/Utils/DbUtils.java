@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package utils;
 
 import java.sql.Connection;
@@ -11,10 +7,6 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Computing Fundamental - HCM Campus
- */
 public class DbUtils {
 //    Do not change this code
     private static final String DB_NAME = "PRJ30x_DB1";

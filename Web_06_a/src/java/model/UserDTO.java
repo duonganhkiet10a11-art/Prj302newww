@@ -4,10 +4,6 @@
  */
 package model;
 
-/**
- *
- * @author ASUS
- */
 public class UserDTO {
 
     private String userID;
@@ -72,5 +68,4 @@ public class UserDTO {
         return "UserDTO{" + "userID=" + userID + ", fullName=" + fullName + ", password=" + password + ", roleID=" + roleID + ", status=" + status + '}';
     }
 
-   
 }
