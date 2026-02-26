@@ -54,7 +54,7 @@ public class UniversityController extends HttpServlet {
             } else {
                 request.setAttribute("msg", "Error, can not delete: " + id);
             }
-        }
+        }//siuu
 
         // Tim kiem
         ArrayList<UniversityDTO> list = new ArrayList<>();
