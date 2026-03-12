@@ -5,26 +5,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>JSP Page</title>
+        <title>Welcome Page</title>
     </head>
     <body>
 
         <c:choose>
-
-            <c:when test="${not empty user}">
+            <c:when test="${not empty user} ">
                 <h1>
                     Welcome, ${user.fullName}
                 </h1>
-
-                <a href="MainController?action=logout">Logout</a><br/>
-                <a href="search.jsp">Search</a>
+                <a href ="MainController?action=logout">Logout </a><br/>
             </c:when>
-
             <c:otherwise>
                 <c:redirect url="login.jsp"/>
             </c:otherwise>
+        </c:choose> 
 
-        </c:choose>
 
     </body>
 </html>
