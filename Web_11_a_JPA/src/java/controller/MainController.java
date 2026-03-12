@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ */
 package controller;
 
 import java.io.IOException;
@@ -10,8 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.UserDAO;
 import model.UserDTO;
-
-public class LoginController extends HttpServlet {
+public class MainController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -24,45 +27,20 @@ public class LoginController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        String action = request.getParameter("action");
+        String url = "login.jsp"; // Trang mặc định
 
-        response.setContentType("text/html;charset=UTF-8");
-
-        String url = "login.jsp";
-
-        HttpSession session = request.getSession();
-
-        try {
-
-            String txtUsername = request.getParameter("txtUsername");
-            String txtPassword = request.getParameter("txtPassword");
-
-            if (txtUsername == null || txtUsername.trim().isEmpty()
-                    || txtPassword == null || txtPassword.trim().isEmpty()) {
-
-                request.setAttribute("message", "Username and password cannot be blank!");
-
-            } else {
-
-                UserDAO udao = new UserDAO();
-                UserDTO user = udao.login(txtUsername, txtPassword);
-
-                if (user != null) {
-
-                    session.setAttribute("user", user);
-                    url = "welcome.jsp";
-
-                } else {
-
-                    request.setAttribute("message", "Invalid user or password");
-                }
-            }
-
-        } catch (Exception e) {
-            log("Error at LoginController: " + e.toString());
+        if (action == null) {
+            url = "login.jsp";
+        } else if (action.equals("login") || action.equals("logout")) {
+            url = "UserController";
+        } else if (action.contains("University")) {
+            // Tất cả action có chữ "University" như: addUniversity, deleteUniversity...
+            url = "UniversityController";
         }
 
-        RequestDispatcher rd = request.getRequestDispatcher(url);
-        rd.forward(request, response);
+        request.getRequestDispatcher(url).forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
